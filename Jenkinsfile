@@ -1,19 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage("Maven Test"){
+        stage("Test"){
             steps{
-                sh 'mvn test'
+                echo 'Test'
             }
         }
-        stage("Maven Build"){
+        stage("Build"){
             steps{
-                sh 'mvn package'
-            }
-        }
-        stage("Maven Deploy"){
-            steps{
-                echo "Deploy jar to server"
+                echo 'Build'
             }
         }
     }
