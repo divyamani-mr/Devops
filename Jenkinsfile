@@ -16,7 +16,7 @@ pipeline{
          stage("Deploy"){
             steps{
                 echo 'Deploy'
-                bat cf push
+                bat 'cf push'
             }
         }
     }
