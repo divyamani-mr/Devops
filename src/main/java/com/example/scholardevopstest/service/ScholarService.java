@@ -43,8 +43,8 @@ public class ScholarService {
         scholar.setCurrentPracticalPhase(currentPracticalPhase);
 
         VTManger vtManger = new VTManger();
-        vtManger.setVtName(vtManger.getVtName());
-        vtManger.setVtInumber(vtManger.getVtInumber());
+        vtManger.setVtName(scholarRequest.getVtName());
+        vtManger.setVtInumber(scholarRequest.getVtInumber());
 
         scholar.setVtManger(vtManger);
         scholar.setVtproject(scholarRequest.getVtproject());
