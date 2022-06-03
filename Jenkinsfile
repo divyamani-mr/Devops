@@ -13,12 +13,25 @@ pipeline{
                 bat 'mvn clean package -Dmaven.test.skip=true'
             }
         }
-         stage("Deploy"){
-            steps{
-                echo 'Deploy'
+        stage('Deploy - Staging') {
+            steps {
+                  echo 'Deploy - Staging'
+                 bat 'cf push'
+            }
+        }
+
+        stage('Sanity check') {
+            steps {
+                input "Does the staging environment look ok?"
+            }
+        }
+
+        stage('Deploy - Production') {
+            steps {
                 bat 'cf push'
             }
         }
+        
     }
     post{
         success{
