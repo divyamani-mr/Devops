@@ -45,9 +45,9 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>2.3.5</version>
+			<groupId>com.sap.db.jdbc</groupId>
+			<artifactId>ngdbc</artifactId>
+			<version>2.4.70</version>
 		</dependency>
 
 		<dependency>
