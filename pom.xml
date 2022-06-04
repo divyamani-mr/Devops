@@ -44,11 +44,7 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.sap.db.jdbc</groupId>
-			<artifactId>ngdbc</artifactId>
-			<version>2.4.70</version>
-		</dependency>
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
