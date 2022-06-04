@@ -10,13 +10,14 @@ pipeline{
         stage("Build"){
             steps{
                 echo 'Build'
-                bat 'mvn clean package -Dmaven.test.skip=true'
+                bat 'mvn clean package -DskipTests'
             }
         }
         stage('Deploy - Staging') {
             steps {
                   echo 'Deploy - Staging'
-                 bat 'cf push'
+                   bat 'cf target -s Test'
+                   bat 'cf push'
             }
         }
 
@@ -28,6 +29,8 @@ pipeline{
 
         stage('Deploy - Production') {
             steps {
+                echo 'Deploy - Production'
+                bat 'cf target -s Production'
                 bat 'cf push'
             }
         }
