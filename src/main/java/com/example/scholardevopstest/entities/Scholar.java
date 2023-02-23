@@ -33,7 +33,7 @@ public class Scholar {
     @Embedded
     @AttributeOverrides({
             @AttributeOverride( name = "practicalPhase", column = @Column(name = "practicalphase")),
-            @AttributeOverride( name = "teamName", column = @Column(name = "teamname")),
+            @AttributeOverride( name = "TeamName", column = @Column(name = "teamname")),
             @AttributeOverride( name = "lob", column = @Column(name = "lob")),
             @AttributeOverride( name = "managerName", column = @Column(name = "managername")),
             @AttributeOverride( name = "managerInumber", column = @Column(name = "managerinumber")),
