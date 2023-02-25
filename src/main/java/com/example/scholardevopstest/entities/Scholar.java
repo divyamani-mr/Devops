@@ -24,7 +24,7 @@ public class Scholar {
 
     @Embedded
     @AttributeOverrides({
-            @AttributeOverride( name = "cgpa", column = @Column(name = "cgpa")),
+            @AttributeOverride( name = "CGPA", column = @Column(name = "cgpa")),
             @AttributeOverride( name = "stream", column = @Column(name = "stream")),
             @AttributeOverride( name = "batch", column = @Column(name = "batch"))
     })
