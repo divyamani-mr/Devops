@@ -48,7 +48,7 @@ public class Scholar {
     })
     private VTManger vtManger;
 
-    @Column(name = "vtproject")
+    @Column(name = "VTroject")
     private String vtproject;
 
 }
